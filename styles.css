@@ -12,6 +12,11 @@ p {
     color: black;
 }
 
+img {
+    float: left;
+    margin: 17px;
+}
+
 body {
     font-family: Garamond, sans-serif;
     background-color: lightcyan;
