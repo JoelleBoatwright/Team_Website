@@ -1,22 +1,48 @@
-h1 {
- color: black;
- border: 1px none black;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: black;
+    background-color: lightyellow;
+    border: 1px dotted black;
 }
 
 p {
- color: black;
+    color: black;
 }
 
 body {
- font-family: Garamond, sans-serif;
+    font-family: Garamond, sans-serif;
+    background-color: lightcyan;
 }
+
 body {
     font-variant-caps: normal;
     font-family: Garamond;
     font-weight: normal;
-    font-size: 120%;
+    font-size: 140%;
 }
+
 h1 {
     font-weight: bold;
     font-size: 150%;
-    }
+}
+
+table {
+    font-size: 100%;
+    font-family: Garamond;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 11px;
+    padding-left: 11px;
+}
+
+th {
+    border: 1px dotted black;
+    padding: 12px;
+}
