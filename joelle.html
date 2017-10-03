@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Joelle</title>
-        <link rel = "stylesheet" href = "styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel = "stylesheet" href = "styles.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
+    <style>
+        div {
+
+        }
+        img {
+            margin-top: 30px;
+        }
+        table {
+            table-layout: fixed;
+        }
+    </style>
     <body>
-         <table>
+         <table class="table table-striped table-bordered">
         <tr>
-            <th>Team Member</th>
-            <th>Link</th>
+            <th style="width:15%">Team Member</th>
+            <th style="width:15%">Link</th>
         <tr>
             <td>Danny's Page</td>
             <td> <a href="./danny.html">Click Here to Check it Out!</a></td>
@@ -19,10 +35,18 @@
         </tr>
     </table>
         <h1>Joelle Boatwright</h1>
-        <img src="./Images/joelle.jpg" width="300px" height="300px">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+        <img src="./Images/joelle.jpg" width="300px" height="300px" class="img-rounded">
+                </div>
+                <div class="col-sm-8">
         <h1>Biography</h1>
         <p>Joelle was born on October 23, 2000 at Marin General Hospital. She grew up in San Rafael and attended, Coleman Elementary School, Davidson Middle School, and San Rafael High School. Her dream college is Cogswell Polytechnic in San Jose where she wants to expand her knowledge of programming and learn how to work in teams to make video games. She was told from a young age that people can't make money from playing video games, so making them is the next best thing. She enjoys creating and making new things and sharing her many ideas for books or comics or games. There is a lot she wants to do with her life and it's hard for her to figure out where to start, but she's going to start with the very basics: learning how to code. The world is controlled by the internet and code and being able to contribute to and be a part of it is a huge and exciting thing.</p>
         <p>Her other biggest interest is anything that has to do with music. Her favorite genres of music are kpop, jpop, electronic, dubstep, melodic dubstep, electro swing, vocaloid, and classic rock. She listens to music all the time whether she's playing a game or doing homework because it's a good way to help her relax and get stuff done. She hopes to maybe make music one day, but she wants to do that as a hobby.</p>
+                </div>
+            </div>
+        </div>
         <h2 class="interests">Interests</h2>
         <h3>Favorite Things</h3>
         <h4>Songs</h4>
@@ -74,7 +98,7 @@
               <li>Start a business</li>
           </ol>
         <h3>Websites</h3>
-          <table>
+          <table class="table table-striped table-bordered">
               <tr>
                   <th>Website</th>
                   <th>Links</th>
