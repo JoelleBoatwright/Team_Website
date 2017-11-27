@@ -2,7 +2,7 @@
 
 
 function randomGreetings() {
-    var greetings = ['Hola', 'Здравствуйте', 'Hallo', 'zdravo', 'Bonjour', 'नमस्ते'];
+    var greetings = ['Hola', 'Здравствуйте', 'Hallo', 'Zdravo', 'Bonjour', 'नमस्ते'];
     var randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
     return randomGreeting;
 }
