@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+    <script language="javascript" type="text/javascript" src="functions.js"></script>
     <title>Danny's Life</title>
 </head>
 <style>
@@ -25,7 +25,14 @@
     }
 </style>
 
+
 <body>
+    <h4>
+        <script>
+            document.write(randomGreetings(), "</br>");
+            document.write(dateMessage(), "</br>");
+        </script>
+    </h4>
     <table class="table table-bordered">
         <tr>
             <th>Team Member</th>
