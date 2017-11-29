@@ -29,7 +29,7 @@ function dateMessage() {
         dayname = "Saturday";
     }
     var end = "";
-    if (daynumber == 1 & 21) {
+    if (daynumber == 1 & 21 & 31) {
         end = "st";
     } else if (daynumber == 2 & 22) {
         end = "nd";
