@@ -1,10 +1,33 @@
 //This is where we ill write all of our functions
 
-
-function randomGreetings() {
-    var greetings = ['Hola', 'Здравствуйте', 'Hallo', 'Zdravo', 'Bonjour', 'नमस्ते'];
-    var randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-    return randomGreeting;
+function greeting() {
+    var d = new Date();
+    var day = d.getDay();
+    var hour = d.getHours();
+    if (hour < 12) {
+        if (day == 0 && day == 6) {
+            return "Go back to sleep! It's the weekend!";
+        } else if (day == 1) {
+            return "Ugh, it's Monday morning! Darn it!";
+        } else {
+            return "Good morning!";
+        }
+    } else if (hour > 12 || hour < 17) {
+        if (day == 0 || day == 6) {
+            return "Hope you're having a great weekend!";
+        }else {
+            return "Good day!";
+        }
+    } else {
+        if (day == 0) {
+            return "Enjoy your evening... tomorrow is Monday :(";
+        } else
+        if (day == 5) {
+            return "It's partayyy time!";
+        } else {
+            return "Good evening!";
+        }
+    }
 }
 
 function dateMessage() {
