@@ -66,3 +66,25 @@ function dateMessage() {
     }
     return ("Today is " + dayname + ", " + monthname + " " + daynumber + end + ".");
 }
+
+function birthdayCountDown(date) {
+    var today = new Date();
+    var birthday = new Date(date);
+    var nextBday = new Date(date);
+
+    nextBday.setFullYear((today.getFullYear() - birthday.getFullYear()) + 2000);
+    var timeUntilBday = today - nextBday;
+
+
+    if (timeUntilBday > 0) {
+        nextBday.setFullYear((today.getFullYear() - birthday.getFullYear()) + 2001);
+    } else {
+
+    }
+
+    var bDays = (today.getTime() - nextBday.getTime()) / -86400000;
+    var bHours = (bDays - Math.floor(bDays)) * 24;
+    var bMinutes = (bHours - Math.floor(bHours)) * 60;
+
+    return ("There are " + Math.floor(bDays) + " days, " + Math.floor(bHours) + " hours, and " + Math.floor(bMinutes) + " minutes until my next birthday!");
+}
