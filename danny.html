@@ -8,6 +8,7 @@
     <script language="javascript" type="text/javascript" src="functions.js"></script>
     <title>Danny's Life</title>
 </head>
+
 <style>
     div {}
 
@@ -23,111 +24,142 @@
     #name {
         margin-left: 30px;
     }
+
 </style>
 
-
 <body>
-    <h4>
-        <script>
-            document.write(randomGreetings(), "</br>");
-            document.write(dateMessage(), "</br>");
-        </script>
-    </h4>
-    <table class="table table-bordered">
-        <tr>
-            <th>Team Member</th>
-            <th>Link</th>
-            <tr>
-                <td>Taelynn's Page</td>
-                <td> <a href="./taelynn.html">Click Here to Check it Out!</a></td>
-            </tr>
-            <tr>
-                <td>Joelle's Page</td>
-                <td><a href="./joelle.html">Click Here to Check it Out!</a></td>
-            </tr>
-    </table>
-    <h2>
-        The Life of Danny
-    </h2>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <h3> Image that describes me! </h3>
-                <img class="rounded" alt="Interact" src="./Images/IMG_0478.PNG" width="550" height="340">
+            <div class="col-sm-4">
+                <div id="table1">
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <th>Team Member</th>
+                            <th>Link</th>
+                            <tr>
+                                <td>Taelynn's Page</td>
+                                <td> <a href="./taelynn.html">Click Here to Check it Out!</a></td>
+                            </tr>
+                            <tr>
+                                <td>Joelle's Page</td>
+                                <td><a href="./joelle.html">Click Here to Check it Out!</a></td>
+                            </tr>
+                    </table>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <h3> Biography </h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="name">
+        <h1>The Life of Danny</h1>
+        <h4>
+            <script>
+                document.write(greeting(), "</br>");
+                document.write(dateMessage(), "</br>");
+                document.write(birthdayCountDown("06/09/2000"), "</br>");
+            </script>
+        </h4>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <img src="./Images/IMG_0478.png" class="img-rounded">
+            </div>
+            <div class="col-sm-7">
+                <h2>Biography</h2>
                 <p> He goes by the name Danny Lam. He first entered this world in California, had spent his time there ever since. As he grew up, he had been pulled into the world of technology. Now, spends most of his time on that laptop he owns, conversing or playing games with those companions of his. Outside of that, he does posses quite a few goals, one of which is to do well in school as he wants to be able to go to a college that he will be content with. With the desire to travel east in search of education, it is imporant for him to do well to fulfill such desire. Another one of his goals is to be more involved in music, as it is something that he absolutely loves to do. He is quite diverse in the field of music, there he is not bound to just any specific category. However, he definitely would prefer to play the violin or piano, along with singing. Though he has not been that involved with any music class in quite some years now, he still posses the desire to get back into it. Something that he is deeply passionate towards is Interact, an international club, mainly found in high schools. Interact is all about community service, and comitting to that service more than you're are committed to yourself. Through Interact, he has gotten to learn more about the world that surrounded him, and met many new people who he fell in love with and enjoy being around. He will most certainly be going into the club called Rotary, which is what it is called in College. A favorite quote that he loves is fairly short, commonly used by Interactors, and something that he deeply connects with. </p>
             </div>
         </div>
     </div>
-    <h3> Favorite Quote </h3>
-    <blockquote>
-        <h5>"Service Above Self"</h5>
-        <footer><cite title="Interact">Rotary</cite></footer>
-    </blockquote>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h4>Interests - His Favorite Things</h4>
-                <ol type="i">
 
-                    <li>Food & Drinks</li>
-                    <li>Music & Singing</li>
-                    <li>Games</li>
-                    <li>Interact Club</li>
-                    <li>Clothes & Shopping</li>
-                    <li>District 5150 Events</li>
-                    <li>Cooking</li>
-                    <li>Exercising/Working Out</li>
-                    <li>Sleeping</li>
-                    <li>Animals</li>
-                </ol>
-            </div>
-            <div class="col-sm-6">
-                <h4>Top Ten Things He Wants To Do After He Graduates</h4>
-                <ol type="i">
-                    <li>Rest during the summer before College</li>
-                    <li>Go to College</li>
-                    <li>Travel to the East(College)</li>
-                    <li>Go to all of the amusement parks</li>
-                    <li>Move out of my house</li>
-                    <li>Find a job in the East</li>
-                    <li>Have a party with my close friends</li>
-                    <li>Become involved with Music again</li>
-                    <li>Buy a Car</li>
-                    <li>Buy pets! Puppies and Kittens</li>
-                </ol>
+    <div id="interests">
+        <h2 class="interests">Interests</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Favorite Things</h3>
+                    <ul>
+                        <li>Food & Drinks</li>
+                        <li>Music & Singing</li>
+                        <li>Games</li>
+                        <li>Interact Club</li>
+                        <li>Clothes & Shopping</li>
+                        <li>District 5150 Events</li>
+                        <li>Cooking</li>
+                        <li>Exercising/Working Out</li>
+                        <li>Sleeping</li>
+                        <li>Animals</li>
+                    </ul>
+                    <h3>Favorite Quote</h3>
+                    <ul>
+                        <blockquote>
+                            <footer>"Service Above Self."<cite title="Disney"> Rotary</cite></footer>
+                        </blockquote>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Top 10 Things to do After Graduation</h3>
+                    <ol>
+                        <li>Rest during the summer before College</li>
+                        <li>Go to College</li>
+                        <li>Travel to the East(College)</li>
+                        <li>Go to all of the amusement parks</li>
+                        <li>Move out of my house</li>
+                        <li>Find a job in the East</li>
+                        <li>Have a party with my close friends</li>
+                        <li>Become involved with Music again</li>
+                        <li>Buy a Car</li>
+                        <li>Buy pets! Puppies and Kittens</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-    <h4>Top Four Websites</h4>
-    <table class="table table.bordered">
-        <tr>
-            <th>Name</th>
-            <th>Link</th>
-        </tr>
-        <tr>
-            <td>Youtube</td>
-            <td>
-                <a href="http://www.youtube.com" target="_blank">Link to Youtube</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Amazon</td>
-            <td><a href="http://www.amazon.com" target="_blank">Link to Amazon</a></td>
-        </tr>
-        <tr>
-            <td>Google</td>
-            <td><a href="http://www.google.com" target="_blank">Link to Google</a></td>
-        </tr>
-        <tr>
-            <td>ListenOnRepeat</td>
-            <td><a href="http://www.listenonrepeat.com" target="_blank">Link to ListenOnRepeat</a></td>
-        </tr>
-    </table>
-    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Websites</h3>
+                <table class="table table-striped table-bordered">
+                    <tr>
+                        <th>Website</th>
+                        <th>Links</th>
+                    </tr>
+                    <tr>
+                        <td>YouTube</td>
+                        <td>
+                            <a href="http://www.youtube.com" target="_blank">Link to Youtube</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amazon</td>
+                        <td>
+                            <a href="http://www.amazon.com" target=_blank>Link to Amazon</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Google</td>
+                        <td>
+                            <a href="http://google.com" target=_blank>Link to Google</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ListenOnRepeat</td>
+                        <td>
+                            <a href="http://www.listenonrepeat.com" target=_blank>Link to ListenOnRepeat</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -8,116 +8,162 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--<link rel="stylesheet " href="styles.css ">-->
-
     <script language="javascript" type="text/javascript" src="functions.js"></script>
 
 </head>
 
+<style>
+    div {}
+
+    img {
+        margin-top: 30px;
+    }
+
+    #table1 {
+        margin-top: 30px;
+    }
+
+    #interests,
+    #name {
+        margin-left: 30px;
+    }
+
+</style>
+
 <body>
-    <table>
-        <tr>
-            <th>Team Member</th>
-            <th>Link</th>
-            <tr>
-                <td>Danny's Page</td>
-                <td> <a href="./danny.html">Click Here to Check it Out!</a></td>
-            </tr>
-            <tr>
-                <td>Joelle's Page</td>
-                <td><a href="./joelle.html">Click Here to Check it Out!</a></td>
-            </tr>
-    </table>
-
-    <h1>Taelynn Knutson</h1>
-
-
-    <script>
-    document.write(greeting(), "</br>");
-    document.write(dateMessage(), "</br>");
-    </script>
-
-
-
-
-   <div class="container">
-     <div class="row">
-       <div class="col-sm-6">
-         <img class="img-circle" src="./Images/taelynn.jpg" width="300px" height="300px">
-         </div>
-       <div class="col-sm-6"><h1>Biography</h1>
-
-    <p>Taelynn was born on August 15, 2000 at the Marin General Hospital. Her parents are Brian Knutson and Lisa Pugh. Some of her hobbies are listening to music, playing tennis, reading, and spending time with her friends, family, and pets. Some of her goals are to start a non profit organization that helps women in some way (she hasn't yet decided how) and another non profit that helps take care of the environment. She also wants to be able to speak 10 languages by the time she is 40. She is 17 now and learning to speak Spanish. </p>
-    <p> She has two sisters, Calista and Lily, who are 15 and 7. She lives with both of her parents and she has 9 pets between her two houses. She has four cats, four dogs, and a fish.</p>
-     </div>
-   </div>
-
-
-    <blockquote> "If I don't have some cake soon, I might die."<cite title="Character"> -Stanley, The Office</cite> </blockquote>
-
-
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <h1>Taelynn's Interests</h1>
-                <ul>
-                    <li>Feminism, Politics, and social issues</li>
-                    <li>Good books</li>
-                    <li>Animals!</li>
-                    <li>Her friends and family</li>
-                    <li>Ed Sheeran's Music</li>
-                    <li>Playing tennis</li>
-                    <li>The tv shows, "The Ofiice" and "Parks and Recreation"</li>
-                    <li>Science an Statistics</li>
-                    <li>Veganism!</li>
-                </ul>
+            <div class="col-sm-4">
+                <div id="table1">
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <th>Team Member</th>
+                            <th>Link</th>
+                            <tr>
+                                <td>Joelle's Page</td>
+                                <td> <a href="./joelle.html">Click Here to Check it Out!</a></td>
+                            </tr>
+                            <tr>
+                                <td>Danny's Page</td>
+                                <td><a href="./danny.html">Click Here to Check it Out!</a></td>
+                            </tr>
+                    </table>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <h1>Top Ten Things She Will Do After She Graduates</h1>
-                <ol>
-                    <li>Go on a road trip with best friends to Southern California</li>
-                    <li>Start college (she doesn't know where yet).</li>
-                    <li>Get a degree in or a combination of Statisics, Biology, Environmental Science, Computer Programming, or Political Science.</li>
-                    <li>Get a job that has to do with the same field of study as her major</li>
-                    <li>Do some scientific research in the same field of study as her job and major</li>
-                    <li>Study abroad in Spain, Italy, and/or somewhere in East Asia</li>
-                    <li>Graduate from college with one or two degrees</li>
-                    <li>Travel the world for two years teaching girls who don't have access to education about Statitics, Biology, Environmental Science, Computer Programming, etc.</li>
-                    <li>Come back after two years and get a masters and Ph.D</li>
-                    <li>Learn 10 languages by the time she is 40 years old</li>
-                </ol>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8"></div>
+                </div>
             </div>
         </div>
     </div>
-    <!--COLUMNS-->
 
+    <div id="name">
+        <h1>Taelynn Knutson</h1>
+        <h4>
+            <script>
+                document.write(greeting(), "</br>");
+                document.write(dateMessage(), "</br>");
+                document.write(birthdayCountDown("10/23/2000"), "</br>");
+            </script>
+        </h4>
+    </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="./Images/taelynn.png" class="img-circle">
+            </div>
+            <div class="col-sm-8">
+                <h2>Biography</h2>
+                <p>Taelynn was born on August 15, 2000 at the Marin General Hospital. Her parents are Brian Knutson and Lisa Pugh. Some of her hobbies are listening to music, playing tennis, reading, and spending time with her friends, family, and pets. Some of her goals are to start a non profit organization that helps women in some way (she hasn't yet decided how) and another non profit that helps take care of the environment. She also wants to be able to speak 10 languages by the time she is 40. She is 17 now and learning to speak Spanish. </p>
+                <p> She has two sisters, Calista and Lily, who are 15 and 7. She lives with both of her parents and she has 9 pets between her two houses. She has four cats, four dogs, and a fish.</p>
+            </div>
+        </div>
+    </div>
 
+    <div id="interests">
+        <h2 class="interests">Interests</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Favorite Things</h3>
+                    <ul>
+                        <li>Feminism, Politics, and social issues</li>
+                        <li>Good books</li>
+                        <li>Animals!</li>
+                        <li>Her friends and family</li>
+                        <li>Ed Sheeran's Music</li>
+                        <li>Playing tennis</li>
+                        <li>The tv shows, "The Ofiice" and "Parks and Recreation"</li>
+                        <li>Science an Statistics</li>
+                        <li>Veganism!</li>
+                    </ul>
+                    <h3>Favorite Quote</h3>
+                    <ul>
+                        <blockquote>
+                            <footer>"If I don't have some cake soon, I might die."<cite title="Character"> Stanley, The Office</cite></footer>
+                        </blockquote>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Top 10 Things to do After Graduation</h3>
+                    <ol>
+                        <li>Go on a road trip with best friends to Southern California</li>
+                        <li>Start college (she doesn't know where yet).</li>
+                        <li>Get a degree in or a combination of Statisics, Biology, Environmental Science, Computer Programming, or Political Science.</li>
+                        <li>Get a job that has to do with the same field of study as her major</li>
+                        <li>Do some scientific research in the same field of study as her job and major</li>
+                        <li>Study abroad in Spain, Italy, and/or somewhere in East Asia</li>
+                        <li>Graduate from college with one or two degrees</li>
+                        <li>Travel the world for two years teaching girls who don't have access to education about Statitics, Biology, Environmental Science, Computer Programming, etc.</li>
+                        <li>Come back after two years and get a masters and Ph.D</li>
+                        <li>Learn 10 languages by the time she is 40 years old</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h1>Four of Taelynn's Favorite Websites</h1>
-    <table class="table table-hover">
-        <tr>
-            <th>Website Name</th>
-            <th>Link</th>
-        </tr>
-        <tr>
-            <td>Feminist Apparel</td>
-            <td><a href="https://www.feministapparel.com/">Click Here To Check It Out!</a></td>
-        </tr>
-        <tr>
-            <td>Cat Bounce</td>
-            <td><a href="http://cat-bounce.com/">Click Here To Check It Out!</a></td>
-        </tr>
-        <tr>
-            <td>Pinterest</td>
-            <td><a href="https://www.pinterest.com//">Click Here To Check It Out!</a></td>
-        </tr>
-        <tr>
-            <td>Khan Academy</td>
-            <td><a href="https://www.khanacademy.org//">Click Here To Check It Out!</a></td>
-        </tr>
-    </table>
-    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Websites</h3>
+                <table class="table table-striped table-bordered">
+                    <tr>
+                        <th>Website</th>
+                        <th>Links</th>
+                    </tr>
+                    <tr>
+                        <td>Feminist Apparel</td>
+                        <td>
+                            <a href="http://www.feministapparel.com" target="_blank">Link to Feminist Apparel</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cat Bounce</td>
+                        <td>
+                            <a href="http://www.cat-bounce.com" target=_blank>Link to Cat Bounce</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pinterest</td>
+                        <td>
+                            <a href="http://pinterest.com" target=_blank>Link to Pinterest</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Khan Academy</td>
+                        <td>
+                            <a href="http://www.khanacademy.org" target=_blank>Link to Khan Academy</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

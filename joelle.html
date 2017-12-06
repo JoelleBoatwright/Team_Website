@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <title>Joelle</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="functions.js"></script>
 </head>
+
 <style>
     div {}
 
@@ -24,9 +27,11 @@
     #name {
         margin-left: 30px;
     }
+
 </style>
 
 <body>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -53,9 +58,19 @@
             </div>
         </div>
     </div>
+
     <div id="name">
         <h1>Joelle Boatwright</h1>
+        <h4>
+            <script>
+                document.write(greeting(), "</br>");
+                document.write(dateMessage(), "</br>");
+                document.write(birthdayCountDown("10/23/2000"), "</br>");
+
+            </script>
+        </h4>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -68,6 +83,7 @@
             </div>
         </div>
     </div>
+
     <div id="interests">
         <h2 class="interests">Interests</h2>
         <div class="container">
@@ -78,7 +94,7 @@
                     <ul>
                         <li>Sandblast by Fox Stevenson</li>
                         <li>As If It's Your Last by Blackpink</li>
-                        <li>Red Flavor by Red Velvet</li>
+                        <li>Literally all of Red Velvet's songs</li>
                         <li>1/4 by CircusP feat. KAITO</li>
                         <li>Ten Thousand Stars by CircusP feat. Hatsune Miku
                             <li>Power by Exo</li>
@@ -132,6 +148,7 @@
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -171,4 +188,5 @@
     </div>
     <hr>
 </body>
+
 </html>
